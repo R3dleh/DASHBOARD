@@ -1,0 +1,128 @@
+.perfil-parent {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 1300px;
+    padding: 40px 20px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+}
+
+.perfil-img {
+    width: 40%;
+}
+
+.perfil-form {
+    width: 60%;
+}
+
+.perfil-form label {
+    font-size: 14px;
+    color: #72777a;
+}
+
+.perfil-form input, 
+.perfil-form select {
+    font-size: 14px;
+    color: #72777a;
+}
+
+.perfil-form .custom-file {
+    margin-top: 10px;
+}
+
+.perfil-form button {
+    margin-top: 10px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #fff;
+    border: none;
+}
+
+.perfil-form button:hover {
+    border: none;
+    color: #fff;
+    transform: scale(1.10);
+    transition: .2s;
+}
+
+.img {
+    background-image: url('../img/pessoa1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+    border-radius: 10px;
+    border: 2px solid rgba(168, 120, 227, 0.3);
+}
+
+@media screen and (max-width: 1480px) {
+    .perfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        padding: 40px 20px;
+        width: 100%;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    }
+
+    .perfil-img {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img {
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 400px;
+        height: 500px;
+    }
+
+    .perfil-form {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .perfil-form button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 758px) {
+    .perfil-img {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 500px;
+    }
+}
